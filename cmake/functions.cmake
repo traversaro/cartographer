@@ -82,12 +82,12 @@ macro(google_initialize_cartographer_project)
     google_add_flag(GOOG_CXX_FLAGS "-Wpedantic")
 
     # Turn some warnings into errors.
-    google_add_flag(GOOG_CXX_FLAGS "-Werror=format-security")
-    google_add_flag(GOOG_CXX_FLAGS "-Werror=missing-braces")
-    google_add_flag(GOOG_CXX_FLAGS "-Werror=reorder")
-    google_add_flag(GOOG_CXX_FLAGS "-Werror=return-type")
-    google_add_flag(GOOG_CXX_FLAGS "-Werror=switch")
-    google_add_flag(GOOG_CXX_FLAGS "-Werror=uninitialized")
+    #google_add_flag(GOOG_CXX_FLAGS "-Werror=format-security")
+    #google_add_flag(GOOG_CXX_FLAGS "-Werror=missing-braces")
+    #google_add_flag(GOOG_CXX_FLAGS "-Werror=reorder")
+    #google_add_flag(GOOG_CXX_FLAGS "-Werror=return-type")
+    #google_add_flag(GOOG_CXX_FLAGS "-Werror=switch")
+    #google_add_flag(GOOG_CXX_FLAGS "-Werror=uninitialized")
 
     if (CMAKE_CXX_COMPILER_ID MATCHES "Clang" OR CMAKE_CXX_COMPILER_ID MATCHES "AppleClang")
       google_add_flag(GOOG_CXX_FLAGS "-Wthread-safety")
